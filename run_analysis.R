@@ -100,4 +100,4 @@ dataclean_melt <-melt(dataset_clean, id=c("ACT_Code","ACT_Des","Subj_Code"),meas
 dataset_means <-dcast(dataclean_melt, ACT_Code + ACT_Des + Subj_Code ~ variable, mean)
 
 # Writing the final database in a txt file #
-write.table(dataset_means, "dataset_means.txt", row.names=FALSE)
+write.table(dataset_means, "datasetmeans.txt", row.names=FALSE)
